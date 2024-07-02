@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Motivation Time</title>
+    <style> 
+        * {
+            font-size: 40px;
+            font-family: Calibri;
+        }
+        body {
+            background-color: lightblue;
+        }
+    </style>
+   
+</head>
+<body>
+    <center>
+        <div class="quote" id="quoteDisplay">Random Motivation Quotes</div>
+        <button class="button" onclick="generateQuote()">Get Motivated</button>
+    
+        <script>
+            const quotes = [
+             "Keep Going!", "Stay Positive", "You can do it!", "There is 'I am possible' in impossible" 
+            ];
+    
+            function generateQuote() {
+                const randomIndex = Math.floor(Math.random() * quotes.length);
+                document.getElementById('quoteDisplay').innerText = quotes[randomIndex];
+            }
+        </script>
+    </center>
+</body>
+</html>
